@@ -13,8 +13,9 @@ public class Test13 {
         Faker faker = new Faker();
         WebDriverManager.chromedriver().setup();
         WebDriver driver = new ChromeDriver();
-        driver.manage().window().setSize(new Dimension(1382, 744));
-        driver.manage().window().setPosition(new Point(1912, 303));
+        driver.manage().window().maximize();
+        //driver.manage().window().setSize(new Dimension(1382, 744));
+        //driver.manage().window().setPosition(new Point(1912, 303));
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 
         driver.get("https://demo.guru99.com/test/upload");
@@ -27,7 +28,7 @@ public class Test13 {
         Thread.sleep(1000);
         terms.click();
         submitButton.click();
-        Thread.sleep(1000);
+        Thread.sleep(3000);
         driver.quit();
     }
 }
