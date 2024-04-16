@@ -16,7 +16,7 @@ public class Test14 {
         WebDriverManager.chromedriver().setup();
         WebDriver driver = new ChromeDriver();
         driver.manage().window().setSize(new Dimension(1382, 744));
-        driver.manage().window().setPosition(new Point(1912, 303));
+        driver.manage().window().setPosition(new Point(-8, -8));
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 
         driver.get("https://demoqa.com/upload-download");
